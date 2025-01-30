@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrisecoffee.mu</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS Library effet for animation  -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <style>
+      .quote {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+  
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+    }
+    h3,
+    .h3,
+    .text-center {
+      font-family: 'Playfair Display', serif;
+      /* google fonts  */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="pictures/logo2.png" alt="Logo">
+        <span>Sunrise Coffee</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-dark ms-3" type="button">Book A Table</button>
+      </div>
+    </div>
+  </nav>
+<!-- hero section -->
+<div class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Background image-->
+    <img src="pictures/heropic.png" alt="Food background" class="hero-image">
+    <div class="hero-overlay"></div>
+    <!-- Centered Content -->
+    <div class="hero-content container">
+      <h1 class="text-center display-4 fw-bold mt-5 ">Where Quality Meets Your Cravings</h1>
+      <p class="lead blockquote">Perfect for savoring handcrafted lattes, rich espressos, and an array of delicious pastries in a
+        relaxed, stylish atmosphere. Whether you're catching up with friends, working remotely, or simply enjoying a
+        moment of calm, Brew Haven is your go-to destination for quality and comfort.</p>
+      <a href="#" class="btn btn-custom btn-book">login Now</a>
+      <a href="#" class="btn btn-custom btn-explore">Explore Menu</a>
+    </div>
+  </div>
+  <br>
+  <!-- browse our menu part  -->
+  <div class="container py-5" data-aos="fade-up" data-aos-duration="2000">
+    <h2 class="section-title fw-bold h3">Browse Our Menu</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="menu-card">
+          <!-- icon link svg -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried"
+            viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            <path
+              d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+          </svg>
+          <h5>Breakfast</h5>
+          <p class="blockquote">Start your day with our freshly made breakfast options. Our breakfast menu offers something for everyone. </p>
+          <button class="btn btn-explore">Explore Menu</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="menu-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw"
+            viewBox="0 0 16 16">
+            <path
+              d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82q0 .069-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87s-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A1 1 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278M9.768 4.607A14 14 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.3 3.3 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a6 6 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69s2.081-.441 2.438-.69c.042-.029.09-.094.102-.215l.852-8.03a6 6 0 0 1-.435.127 9 9 0 0 1-.89.17zM4.467 4.884s.003.002.005.006zm7.066 0-.005.006zM11.354 5a3 3 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222" />
+          </svg>
+          <h5>Drinks</h5>
+          <p class="blockquote">Indulge in a selection of expertly brewed coffees, from rich espressos to creamy lattes. Try iced beverages
+            or soothing teas.</p>
+          <button class="btn btn-explore">Explore Menu</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="menu-card">
+          <i class="bi bi-cake2"></i>
+          <h5>Pastries</h5>
+          <p class="blockquote">Our selection of pastries is baked fresh daily, featuring everything from flaky croissants and muffins to
+            cinnamon rolls.</p>
+          <button class="btn btn-explore">Explore Menu</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="menu-card">
+          <i class="bi bi-cake2-fill"></i>
+          <h5>Desserts</h5>
+          <p class="blockquote">End your visit with a treat from our dessert menu, including decadent cakes, cookies, and tarts to satisfy
+            your sweet tooth.</p>
+          <button class="btn btn-explore">Explore Menu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- We Provide Section with Full-Width Card -->
+  <div class="card bg-light border-0 my-5 shadow-sm" data-aos="fade-right" data-aos-duration="1000">
+    <div class="card-body">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-md-6">
+            <img src="pictures/tasty-homemade-tiramisu-cake.jpg" alt="Coffee and Dessert"
+              class="img-fluid rounded shadow">
+          </div>
+          <!-- Text Section -->
+          <div class="col-md-6">
+            <h2 class="fw-bold mt-3 h3">We Provide a healthy and delicious coffee for your family.</h2>
+            <p class="blockquote">
+              At our coffee shop, we believe in offering not just great taste, but also nourishing options for the whole
+              family.
+              That’s why we proudly provide healthy coffee choices, made with high-quality, organic beans and natural
+              sweeteners.
+            </p>
+            <p class="blockquote">
+              Whether you prefer a low-calorie latte, a dairy-free alternative, or a refreshing cold brew, our drinks
+              are crafted to support a balanced lifestyle without compromising on flavor.
+            </p>
+            <a href="#" class="btn btn-explore">More About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card part  -->
+  <div class="container py-5" data-aos="fade-up" data-aos-duration="1000">
+    <h2 class="text-center mb-4 h3 fw-bold">We also offer unique events for your services</h2>
+    <br>
+    <div class="row text-center">
+      <!-- Meetings  card 1-->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="pictures/close-up-young-colleagues-having-meeting.jpg" class="card-img-top" alt="Meetings">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Meetings</h5>
+            <p class="card-text blockquote"> With a cozy and inviting atmosphere, it provides a relaxed yet professional setting
+              for discussions and brainstorming sessions.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Caterings -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="pictures/delicious-caramel-vanilla-cupcakes-served-confectionery-copyspace-food-sugar-dessert-sweet-tasty-concept.jpg"
+            class="card-img-top" alt="Caterings">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Caterings</h5>
+            <p class="card-text blockquote">Enhance the overall atmosphere and contribute to a memorable experience for your guests
+              with coffee catering.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Art Shows -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="pictures/latte-coffee.jpg" class="card-img-top" alt="Art Shows">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Art Shows</h5>
+            <p class="card-text blockquote">The intricate details in the cup evoke warmth and relaxation, paired with the rich,
+              dark hues of coffee.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Parties -->
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="pictures/enjoying-people-celebrating-home.jpg" class="card-img-top" alt="Parties">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Parties</h5>
+            <p class="card-text blockquote">Enjoy coffee tastings, workshops, or live music nights for meaningful connections and
+              celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer Testimonials Section -->
+  <div class="container" data-aos="fade-up" data-aos-duration="000">
+    <h2 class="text-center fw-bold mb-4">What Our Customers Say</h2>
+    <div class="row text-center">
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="p-4 border rounded">
+          <blockquote class="blockquote">
+            <p>"The best restaurant"</p>
+            <p class="small">I stumbled upon this café by chance, and I’m so glad I did! The coffee is absolutely
+              top-notch—rich, flavorful, and expertly brewed.</p>
+          </blockquote>
+          <footer class="blockquote-footer">John Yanal</footer>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="p-4 border rounded">
+          <blockquote class="blockquote">
+            <p>"Simply delicious"</p>
+            <p class="small">If you’re tired of the usual coffee shop drinks, this place is a game-changer. Their
+              signature drinks are creative and packed with flavor.</p>
+          </blockquote>
+          <footer class="blockquote-footer">Camila Smith</footer>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="p-4 border rounded">
+          <blockquote class="blockquote">
+            <p>"One of a kind restaurant"</p>
+            <p class="small">This café has some of the best coffee I’ve ever had—smooth, aromatic, and expertly made.
+              The décor is modern and stylish.</p>
+          </blockquote>
+          <footer class="blockquote-footer">Amrita Hazard</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+<!-- article-part -->
+  <div class="card bg-light border-0 my-5 shadow-sm" data-aos="fade-up" data-aos-duration="1000">
+    <div class="card-body">
+      <div class="container">
+        <div class="container mt-5">
+          <h2 class="blog-title h3">Our Blog & Articles</h2>
+          <div class="blog-btn">
+            <button class="btn btn-outline-dark">Read all Articles</button>
+          </div>
+          <!-- article1 -->
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/grilled-cheese-sandwich.jpg" class="card-img-top" alt="Coffee and croissants">
+                <div class="card-body">
+                  <p class="card-text quote">How to make the perfect grilled cheese sandwich</p>
+                </div>
+              </div>
+            </div>
+            <!-- article2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/person-holding-tray-with-croissants-oven.jpg" class="card-img-top" alt="Croissants">
+                <div class="card-body">
+                  <p class="card-text quote">How to make delicious croissants in oven</p>
+                </div>
+              </div>
+            </div>
+            <!-- article3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/delicious-donuts-different-flavors-paper-close-up.jpg" class="card-img-top" alt="Donuts">
+                <div class="card-body">
+                  <p class="card-text quote">How to make delicious donuts</p>
+                </div>
+              </div>
+            </div>
+            <!-- article4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/chocolate-brownies.jpg" class="card-img-top" alt="Brownie">
+                <div class="card-body">
+                  <p class="card-text quote">How to make chocolate brownie</p>
+                </div>
+              </div>
+            </div>
+            <!-- article5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/pile-cookies-with-chocolate-chips-front-cloth.jpg" class="card-img-top" alt="Brownie">
+                <div class="card-body">
+                  <p class="card-text quote">How to make cookies</p>
+                </div>
+              </div>
+            </div>
+            <!-- article6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card blog-card">
+                <img src="pictures/chocolate-panna-cotta.jpg" class="card-img-top" alt="Brownie">
+                <div class="card-body">
+                  <p class="card-text quote">How to make chocolate dessert </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- foooter -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold">About Us</h5>
+          <p>Perfect for savoring handcrafted lattes, rich espressos, and an array of delicious pastries in a relaxed,
+            stylish atmosphere.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Menu</a></li>
+            <li><a href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Contact</h5>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-map-marker-alt me-2"></i>123 Food Street, Gourmet City</li>
+            <li><i class="fa fa-phone me-2"></i>+230 58157319</li>
+            <li><i class="fa fa-envelope me-2"></i>Sunrisecoffee@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- contact us bar (email) -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase fw-bold">Contact us </h5>
+          <p>want to receive update on specials and new products? fill in your Email below. </p>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <hr class="border-light">
+
+      <!-- Social Media and Copyright -->
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy;2025 SUNRISE COFFEE SHOP. All rights reserved.</p>
+        </div>
+  </footer>
+
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
