@@ -1,4 +1,5 @@
 Coffee Website - Final Web Development Project
+
 This is a simple coffee website built as part of my final web development project. The website is designed using HTML, CSS, and the Bootstrap framework. It provides a user-friendly and visually appealing interface for coffee lovers to explore and learn more about different coffee varieties.
 
 Features
